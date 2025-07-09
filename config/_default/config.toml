@@ -1,0 +1,3 @@
+baseURL = 'https://hans0803.github.io/'
+languageCode = 'zh-tw'
+hasCJKLanguage = true
