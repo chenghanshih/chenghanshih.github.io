@@ -4,11 +4,12 @@ title : "使用正則表達式在 R 語言中挖掘文本資訊"
 date : "2024-06-19"
 summary : "關於正則表達式在資料處理中的用法及示例"
 categories : [
-    "R",
-    "Text Mining",
+    "programming",
 ]
 tags : [
-    "Regular Expression",
+    "r",
+    "regex",
+    "text-mining",
 ]
 series : ["Regex"]
 

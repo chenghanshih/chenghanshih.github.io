@@ -4,12 +4,12 @@ title = "Implementation of Various Integration Methods"
 date = "2022-02-25"
 description = "Guide to implementing various integration methods"
 categories = [
-    "R",
-    "Mathematics",
+    "mathematics",
 ]
 tags = [
-    "R Coding",
-    "Integrate",
+    "r",
+    "statistics",
+    "simulation",
 ]
 # series = ["Theme Demo"]
 +++

@@ -4,12 +4,13 @@ title = "Implementation of Rejection Sampling Methods"
 date = "2022-03-11"
 description = ""
 categories = [
-    "R",
-    "Mathematics",
+    "mathematics",
 ]
 tags = [
-    "R Coding",
-    "Integrate",
+    "r",
+    "statistics",
+    "simulation",
+    "sampling",
 ]
 # series = ["Theme Demo"]
 +++

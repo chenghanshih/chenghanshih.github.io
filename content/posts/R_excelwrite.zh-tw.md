@@ -4,11 +4,11 @@ title : "解決 Excel 寫入系統保留字元時導致的錯誤"
 date : "2024-07-12"
 summary : "我們將在這篇文章中說明及解決在使用 R 寫入文本大數據至 Excel 時遇到的檔案損毀問題"
 categories : [
-    "R",
-    "Excel",
+    "programming",
 ]
 tags : [
-    "Unicode",
+    "r",
+    "data-processing",
 ]
 
 ---

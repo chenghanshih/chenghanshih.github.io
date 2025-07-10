@@ -4,11 +4,12 @@ title = "Plotting Bus Routes Based on GGMap"
 date = "2024-04-20"
 description = ""
 categories = [
-    "R",
+    "data-science",
 ]
 tags = [
-    "R Plotting",
-    "GGMAP",
+    "r",
+    "visualization",
+    "api",
 ]
 # series = ["Theme Demo"]
 +++

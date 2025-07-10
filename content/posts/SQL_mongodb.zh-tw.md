@@ -4,10 +4,12 @@ title : "如何在 Mac 上部署 MongoDB Server"
 date : "2024-06-12"
 summary : "在這篇文章中我將介紹如何在 Mac 電腦上部署本地端的 MongoDB"
 categories : [
-    "NoSQL",
+    "programming",
 ]
 tags : [
-    "MongoDB",
+    "database",
+    "mongodb",
+    "nosql",
 ]
 series : ["MongoDB"]
 ---

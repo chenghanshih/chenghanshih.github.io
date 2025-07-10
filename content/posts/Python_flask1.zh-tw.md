@@ -4,11 +4,12 @@ title : "快速上手 Flask：從安裝到第一個網頁"
 date : "2024-07-10"
 summary : "這篇文章教你如何安裝 Flask，並建立由簡單程式碼所架設的網頁"
 categories : [
-    "Python",
-    "Website",
+    "web-development",
 ]
 tags : [
-    "Flask",
+    "python",
+    "flask",
+    "web-framework",
 ]
 series : ["Flask"]
 

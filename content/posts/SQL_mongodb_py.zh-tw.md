@@ -4,11 +4,12 @@ title : "如何使用 Python 處理 MongoDB 中的數據"
 date : "2024-06-14"
 summary : "以 Python 連線至本地端的 MongoDB，並且結合 pandas 來演示基本的 CRUD 操作"
 categories : [
-    "NoSQL",
-    "Python",
+    "programming",
 ]
 tags : [
-    "MongoDB",
+    "python",
+    "database",
+    "mongodb",
 ]
 series : ["MongoDB"]
 ---

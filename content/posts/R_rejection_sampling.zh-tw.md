@@ -4,12 +4,13 @@ title : "拒絕抽樣實作"
 date : "2022-03-11"
 summary : "以蒙地卡羅法來將目標函數以覆蓋接受域來實現拒絕抽樣"
 categories : [
-    "R",
-    "Mathematics",
+    "mathematics",
 ]
 tags : [
-    "Simulation",
-    "Rejection Sampling",
+    "r",
+    "statistics",
+    "simulation",
+    "sampling",
 ]
 # series = ["Theme Demo"]
 ---

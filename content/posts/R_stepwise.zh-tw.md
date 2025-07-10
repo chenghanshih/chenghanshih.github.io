@@ -4,13 +4,12 @@ title : "基於 F-value 的 Stepwise Model Selection"
 date : "2024-06-09"
 summary : "以 R 語言實作基於 F-value 的 Forward 及 Backward Stepwise Model Selection，並將其製作成函數及 package"
 categories : [
-    "R",
-    "Mathematics",
+    "data-science",
 ]
 tags : [
-    "R function",
-    "Forward Stepwise",
-    "Backward Stepwise",
+    "r",
+    "statistics",
+    "modeling",
 ]
 # series = ["Theme Demo"]
 ---

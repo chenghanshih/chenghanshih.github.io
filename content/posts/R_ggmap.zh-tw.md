@@ -4,10 +4,12 @@ title : "繪製基於 GGMap 的公車路線圖"
 date : "2024-04-20"
 summary : "使用 R 語言調用 Google Map Api 來繪製附加公車站牌資訊的地圖"
 categories : [
-    "R",
+    "data-science",
 ]
 tags : [
-  "API"
+    "r",
+    "visualization",
+    "api",
 ]
 # series = ["Theme Demo"]
 ---

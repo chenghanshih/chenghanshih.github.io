@@ -4,12 +4,12 @@ title : "多種積分函數實作"
 date : "2022-02-25"
 summary : "使用黎曼積分法、梯形積分法、辛普森積分法及蒙地卡羅積分法來模擬程式計算積分的過程"
 categories : [
-    "R",
-    "Mathematics",
+    "mathematics",
 ]
 tags : [
-    "Simulation",
-    "Intergral",
+    "r",
+    "statistics",
+    "simulation",
 ]
 # series = ["Theme Demo"]
 ---

@@ -4,11 +4,12 @@ title : "如何使用 R 處理 MongoDB 中的數據"
 date : "2024-06-13"
 summary : "使用 R 連線至本地端的 MongoDB，並透過實際的程式演示來進行資料庫的基本 CRUD 操作"
 categories : [
-    "NoSQL",
-    "R",
+    "programming",
 ]
 tags : [
-    "MongoDB",
+    "r",
+    "database",
+    "mongodb",
 ]
 series : ["MongoDB"]
 ---

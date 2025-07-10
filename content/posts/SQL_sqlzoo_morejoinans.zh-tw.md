@@ -4,10 +4,12 @@ title : "SQLZOO解答與討論（More JOIN）"
 date : "2024-06-03"
 summary : "在 SQLZOO More JOIN 章節練習時的習題實作及詳解"
 categories : [
-    "SQL",
+    "programming",
 ]
 tags : [
-    "MySQL",
+    "sql",
+    "database",
+    "mysql",
 ]
 series : ["SQLZOO"]
 ---
