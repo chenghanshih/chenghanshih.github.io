@@ -1,0 +1,1674 @@
+<!doctype html>
+<html
+  lang="zh-tw"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="zh-tw" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>MovieLens 100k 推薦系統 &middot; Hans Website</title>
+  <meta name="title" content="MovieLens 100k 推薦系統 &middot; Hans Website" />
+  
+  <meta name="description" content="運用電影評分資料資料嘗試構建基於不同方法的推薦系統" />
+  <meta name="keywords" content="r, machine-learning, modeling, " />
+  
+  
+  <link rel="canonical" href="https://chenghanshih.github.io/projects/r_recommender/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.2755fda1868f0bfc1843df512e7b0b0bec55a259db5f8b13dc3c0f7894e519f617c2b66f5915ec207e2a1ffc8b6d1b53dbd8f3dff8892140cb5eacc50a6edfbb.css"
+    integrity="sha512-J1X9oYaPC/wYQ99RLnsLC&#43;xVolnbX4sT3DwPeJTlGfYXwrZvWRXsIH4qH/yLbRtT29jz3/iJIUDLXqzFCm7fuw==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.dc15078f1fe553ce354f85ec1bfce7ded8b4060d4124a49b19e31dd64345b8d8f03edbbb1b681748650181f9d81da9728ca10c2b9cb2ae7bf8983d4b669ba876.js"
+    integrity="sha512-3BUHjx/lU841T4XsG/zn3ti0Bg1BJKSbGeMd1kNFuNjwPtu7G2gXSGUBgfnYHalyjKEMK5yyrnv4mD1LZpuodg==" data-copy="複製" data-copied="已複製"></script>
+  
+  
+  
+  <script src="/lib/zoom/zoom.min.f592a181a15d2a5b042daa7f746c3721acf9063f8b6acd175d989129865a37d400ae0e85b640f9ad42cd98d1f8ad30931718cf8811abdcc5fcb264400d1a2b0c.js" integrity="sha512-9ZKhgaFdKlsELap/dGw3Iaz5Bj&#43;Las0XXZiRKYZaN9QArg6FtkD5rULNmNH4rTCTFxjPiBGr3MX8smRADRorDA=="></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://chenghanshih.github.io/projects/r_recommender/">
+  <meta property="og:site_name" content="Hans Website">
+  <meta property="og:title" content="MovieLens 100k 推薦系統">
+  <meta property="og:description" content="運用電影評分資料資料嘗試構建基於不同方法的推薦系統">
+  <meta property="og:locale" content="zh_tw">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2022-12-21T00:00:00+00:00">
+    <meta property="article:modified_time" content="2022-12-21T00:00:00+00:00">
+    <meta property="article:tag" content="R">
+    <meta property="article:tag" content="Machine-Learning">
+    <meta property="article:tag" content="Modeling">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="MovieLens 100k 推薦系統">
+  <meta name="twitter:description" content="運用電影評分資料資料嘗試構建基於不同方法的推薦系統">
+
+    
+  
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Projects",
+    "name": "MovieLens 100k 推薦系統",
+    "headline": "MovieLens 100k 推薦系統",
+    
+    "abstract": "運用電影評分資料資料嘗試構建基於不同方法的推薦系統",
+    "inLanguage": "zh-tw",
+    "url" : "https:\/\/chenghanshih.github.io\/projects\/r_recommender\/",
+    "author" : {
+      "@type": "Person",
+      "name": ""
+    },
+    "copyrightYear": "2022",
+    "dateCreated": "2022-12-21T00:00:00\u002b00:00",
+    "datePublished": "2022-12-21T00:00:00\u002b00:00",
+    
+    "dateModified": "2022-12-21T00:00:00\u002b00:00",
+    
+    "keywords": ["r","machine-learning","modeling"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "3897"
+  }]
+  </script>
+
+
+  
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/lib/katex/katex.min.7e7e35e3ef02b7b437449a44ca3fac62ec1ed39cb8312b680a00fe8ac60badc95b063b694636b8440856f7f5e8c2cc9e6b0efb581179b2656c7e1e97558c7096.css"
+    integrity="sha512-fn414&#43;8Ct7Q3RJpEyj&#43;sYuwe05y4MStoCgD&#43;isYLrclbBjtpRja4RAhW9/Xowsyeaw77WBF5smVsfh6XVYxwlg==">
+  
+  
+  <script defer src="/lib/katex/katex.min.cadd45c1af1f44bdaf196dc9b104f1daeb29043f0dc59155ffe22847510a04390a0b7a859400d420a626204f7fc5ddb07c19311de1c66b25e19c2559d3e126a8.js" integrity="sha512-yt1Fwa8fRL2vGW3JsQTx2uspBD8NxZFV/&#43;IoR1EKBDkKC3qFlADUIKYmIE9/xd2wfBkxHeHGayXhnCVZ0&#43;EmqA=="></script>
+  
+  
+  <script
+    defer
+    src="/lib/katex/auto-render.min.e9b2833d28623d18c071d78ef13e9c79d695122d296af3dbcee7bf1bf6518b0565bab59939267fbc8f5faf696193c20f5caef3e7501969cfb306f6738032730d.js"
+    integrity="sha512-6bKDPShiPRjAcdeO8T6cedaVEi0pavPbzue/G/ZRiwVlurWZOSZ/vI9fr2lhk8IPXK7z51AZac&#43;zBvZzgDJzDQ=="
+    onload="renderMathInElement(document.body);"></script>
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+  
+  
+  
+  <meta name="theme-color"/>
+  
+  
+
+  
+  
+</head>
+<body
+    class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>快轉到主要內容</a
+      >
+    </div>
+    
+    
+      <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px] z-index-100">
+  <div
+    id="menu-blur"
+    class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom bg-neutral dark:bg-neutral-800"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3 padding-main-menu">
+    
+    
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Hans Website</a>
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a
+  href="/about/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="About">
+    About
+  </p>
+</a>
+
+
+
+            
+            
+  <a
+  href="/posts/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="Posts">
+    Blog
+  </p>
+</a>
+
+
+
+            
+            
+  <a
+  href="/projects/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="Projects">
+    Project
+  </p>
+</a>
+
+
+
+            
+            
+  <a
+  href="https://github.com/chenghanshih"
+  target="_blank"
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+    <span >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+
+    </span>
+  
+  <p class="text-base font-medium" title="">
+    
+  </p>
+</a>
+
+
+
+            
+            
+  <a
+  href="https://www.linkedin.com/in/%e6%89%bf%e7%bf%b0-%e6%96%bd-aab5962ba/"
+  target="_blank"
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+    <span >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+
+  </span>
+
+
+    </span>
+  
+  <p class="text-base font-medium" title="">
+    
+  </p>
+</a>
+
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class=" flex items-center">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+                    <div class="flex items-center justify-center dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
+                <div class="flex items-center justify-center dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 md:hidden">
+
+        <label id="menu-button" class="block">
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50 padding-top-[5px]">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li id="menu-close-button">
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+  <a
+    href="/about/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="About">
+      About
+    </p>
+  </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+  <a
+    href="/posts/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="Posts">
+      Blog
+    </p>
+  </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+  <a
+    href="/projects/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="Projects">
+      Project
+    </p>
+  </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+  <a
+    href="https://github.com/chenghanshih"
+    
+      target="_blank"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+      <div >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+
+      </div>
+    
+    <p class="text-bg font-bg" title="">
+      
+    </p>
+  </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+  <a
+    href="https://www.linkedin.com/in/%e6%89%bf%e7%bf%b0-%e6%96%bd-aab5962ba/"
+    
+      target="_blank"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+      <div >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+
+  </span>
+
+
+      </div>
+    
+    <p class="text-bg font-bg" title="">
+      
+    </p>
+  </a>
+</li>
+
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
+
+  </div>
+</div>
+
+
+<script
+  type="text/javascript"
+  src="/js/background-blur.min.4812321520cc2e4cd52bf9137015a55bb6c0b5e66a6b2c96b8654c0ec99be59e8e6425dd838a6fd9bac54000586f37f4a9680bbefaa2aee4601a69e188005cf6.js"
+  integrity="sha512-SBIyFSDMLkzVK/kTcBWlW7bAteZqayyWuGVMDsmb5Z6OZCXdg4pv2brFQABYbzf0qWgLvvqiruRgGmnhiABc9g=="
+  data-target-id="menu-blur"></script>
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+
+
+  <article>
+    
+
+
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        MovieLens 100k 推薦系統
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+
+  
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2022-12-21T00:00:00&#43;00:00">21 December 2022</time><span class="px-2 text-primary-500">&middot;</span><span>3897 字</span><span class="px-2 text-primary-500">&middot;</span><span title="預計閱讀時間">8 分鐘</span>
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+            
+              <span
+                class="mr-2 margin-top-[0.5rem]"
+                onclick="window.open(&#34;/categories/data-science/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Data-Science
+  </span>
+</span>
+
+              </span>
+            
+          
+        
+      
+        
+      
+        
+          
+            
+              <span
+                class="mr-2 margin-top-[0.5rem]"
+                onclick="window.open(&#34;/tags/r/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    R
+  </span>
+</span>
+
+              </span>
+            
+              <span
+                class="mr-2 margin-top-[0.5rem]"
+                onclick="window.open(&#34;/tags/machine-learning/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Machine-Learning
+  </span>
+</span>
+
+              </span>
+            
+              <span
+                class="mr-2 margin-top-[0.5rem]"
+                onclick="window.open(&#34;/tags/modeling/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Modeling
+  </span>
+</span>
+
+              </span>
+            
+          
+        
+      
+    </div>
+  
+
+  
+  
+
+
+
+      </div>
+
+      
+      
+      
+      
+      
+
+      
+
+      
+
+        
+          
+          
+<div class="flex author">
+  
+  <div class="place-self-center">
+    
+    
+    <div class="text-2xl sm:text-lg">
+</div>
+  </div>
+</div>
+
+        
+
+        
+          
+
+        
+          <div class="mb-5"></div>
+        
+
+      
+
+    </header>
+
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+        <div class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+          <div
+            class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]
+            
+            ">
+            
+              <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目錄
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#induction">Induction</a></li>
+    <li><a href="#exploratory-data-analysis-eda">Exploratory Data Analysis, EDA</a>
+      <ul>
+        <li><a href="#movies-and-user-data">Movies and User Data</a></li>
+        <li><a href="#jaccard">Jaccard</a></li>
+        <li><a href="#dimension-reduction">Dimension Reduction</a></li>
+      </ul>
+    </li>
+    <li><a href="#recommender-system">Recommender System</a>
+      <ul>
+        <li><a href="#user-based-collaborative-filtering"><a href="/html/MovieLens_100k_Recommender_System.html#User_Base_CF">User-Based Collaborative Filtering</a></a></li>
+        <li><a href="#item-based-collaborative-filtering"><a href="/html/MovieLens_100k_Recommender_System.html#Item_Base_CF">Item-Based Collaborative Filtering</a></a></li>
+        <li><a href="#funksvd"><a href="/html/MovieLens_100k_Recommender_System.html#FunkSVD">FunkSVD</a></a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目錄
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#induction">Induction</a></li>
+    <li><a href="#exploratory-data-analysis-eda">Exploratory Data Analysis, EDA</a>
+      <ul>
+        <li><a href="#movies-and-user-data">Movies and User Data</a></li>
+        <li><a href="#jaccard">Jaccard</a></li>
+        <li><a href="#dimension-reduction">Dimension Reduction</a></li>
+      </ul>
+    </li>
+    <li><a href="#recommender-system">Recommender System</a>
+      <ul>
+        <li><a href="#user-based-collaborative-filtering"><a href="/html/MovieLens_100k_Recommender_System.html#User_Base_CF">User-Based Collaborative Filtering</a></a></li>
+        <li><a href="#item-based-collaborative-filtering"><a href="/html/MovieLens_100k_Recommender_System.html#Item_Base_CF">Item-Based Collaborative Filtering</a></a></li>
+        <li><a href="#funksvd"><a href="/html/MovieLens_100k_Recommender_System.html#FunkSVD">FunkSVD</a></a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+<script>
+  (function () {
+    'use strict'
+
+    const SCROLL_OFFSET_RATIO = 0.33
+    const TOC_SELECTOR = '#TableOfContents'
+    const ANCHOR_SELECTOR = '.anchor'
+    const TOC_LINK_SELECTOR = 'a[href^="#"]'
+    const NESTED_LIST_SELECTOR = 'li ul'
+    const ACTIVE_CLASS = 'active'
+
+    function getActiveAnchorId(anchors, offsetRatio) {
+      const threshold = window.scrollY + window.innerHeight * offsetRatio
+      const tocLinks = [...document.querySelectorAll('#TableOfContents a[href^="#"]')]
+      const tocIds = new Set(tocLinks.map(link => link.getAttribute('href').substring(1)))
+
+      for (let i = anchors.length - 1; i >= 0; i--) {
+        const top = anchors[i].getBoundingClientRect().top + window.scrollY
+        if (top <= threshold && tocIds.has(anchors[i].id)) {
+          return anchors[i].id
+        }
+      }
+      return anchors.find(anchor => tocIds.has(anchor.id))?.id || ''
+    }
+
+    function updateTOC({ toc, anchors, links, scrollOffset, collapseInactive }) {
+      const activeId = getActiveAnchorId(anchors, scrollOffset)
+      if (!activeId) return
+
+      links.forEach(link => {
+        const isActive = link.getAttribute('href') === `#${activeId}`
+        link.classList.toggle(ACTIVE_CLASS, isActive)
+
+        if (collapseInactive) {
+          const ul = link.closest('li')?.querySelector('ul')
+          if (ul) ul.style.display = isActive ? '' : 'none'
+        }
+      })
+
+      if (collapseInactive) {
+        const activeLink = toc.querySelector(`a[href="#${CSS.escape(activeId)}"]`)
+        let el = activeLink
+        while (el && el !== toc) {
+          if (el.tagName === 'UL') el.style.display = ''
+          if (el.tagName === 'LI') el.querySelector('ul')?.style.setProperty('display', '')
+          el = el.parentElement
+        }
+      }
+    }
+
+    function initTOC() {
+      const toc = document.querySelector(TOC_SELECTOR)
+      if (!toc) return
+
+      const collapseInactive = false
+      const anchors = [...document.querySelectorAll(ANCHOR_SELECTOR)]
+      const links = [...toc.querySelectorAll(TOC_LINK_SELECTOR)]
+
+      if (collapseInactive) {
+        toc.querySelectorAll(NESTED_LIST_SELECTOR).forEach(ul => ul.style.display = 'none')
+      }
+
+      const config = {
+        toc,
+        anchors,
+        links,
+        scrollOffset: SCROLL_OFFSET_RATIO,
+        collapseInactive
+      }
+
+      window.addEventListener('scroll', () => updateTOC(config), { passive: true })
+      window.addEventListener('hashchange', () => updateTOC(config), { passive: true })
+
+      updateTOC(config)
+    }
+
+    document.readyState === 'loading'
+      ? document.addEventListener('DOMContentLoaded', initTOC)
+      : initTOC()
+  })()
+</script>
+
+
+            
+            
+          </div>
+        </div>
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+
+
+        <div class="article-content max-w-prose mb-20">
+          <p>欣賞電影與劇集是現代人眾多生活消遣之一，而如何推薦一部令使用者滿意的影集也成為各個應用程式在現代科技發達下的新戰場。我們生活中處處皆充滿了推薦系統的影子，舉凡購物網站、社群媒體、甚至連搜尋引擎均是如此，而我基於對這個領域的好奇心，加上在碩士論文研究上有考慮向推薦系統發展的緣故，這個學期我跨系修習了資工系的推薦系統課程，因此也就衍生出了這份期末報告，由於教授課程規劃的緣故，所有的報告統一均採用 MovieLens 100k 這筆資料，而這次的報告也在課程中拿到最好的成績。</p>
+
+<h2 class="relative group">Induction 
+    <div id="induction" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#induction" aria-label="定位點">#</a>
+    </span>        
+    
+</h2>
+<p>這筆資料來自於 <a
+  href="http://grouplens.org/datasets/movielens/"
+    target="_blank"
+  >grouplens</a>
+ 這個網站，資料中一共有 100,000 條評分，它們分別来自 943 位使用者對 1682 部電影的評價。而本次的資料一共分成三個部分，它們分別有使用者的相關數據、電影的相關數據以及使用者對電影的評分。接著就讓我們來一一介紹我們有使用到的部分。</p>
+<ol>
+<li>
+<p>使用者數據：</p>
+<ul>
+<li>
+<p>user_id</p>
+</li>
+<li>
+<p>age : 使用者的年齡</p>
+</li>
+<li>
+<p>gender</p>
+</li>
+<li>
+<p>occupation : 使用者的職業</p>
+</li>
+</ul>
+</li>
+<li>
+<p>電影數據：</p>
+<ul>
+<li>
+<p>movie_id</p>
+</li>
+<li>
+<p>movie_title</p>
+</li>
+<li>
+<p>release_date : 電影上映日期</p>
+</li>
+<li>
+<p>unknown ~ Western : 這裡一共有 19 個電影類別，均為 0 1 的類別變數，用來表示這部電影是否屬於該類別。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>使用者對電影的評分：</p>
+<ul>
+<li>
+<p>user_id</p>
+</li>
+<li>
+<p>movie_id</p>
+</li>
+<li>
+<p>rating</p>
+</li>
+<li>
+<p>tinestamp : 使用者對電影的評分時間</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>我們的最終目標是利用這筆資料的各個部分進行電影推薦系統的建模。</p>
+<hr>
+
+<h2 class="relative group">Exploratory Data Analysis, EDA 
+    <div id="exploratory-data-analysis-eda" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#exploratory-data-analysis-eda" aria-label="定位點">#</a>
+    </span>        
+    
+</h2>
+
+<h3 class="relative group">Movies and User Data 
+    <div id="movies-and-user-data" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#movies-and-user-data" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>由於在使用者的數據上我們並沒有太多的發現，這是關於<a
+  href="/html/MovieLens_100k_Recommender_System.html#User">使用者圖表的連結</a>
+，我們這裡的分析會以電影資料為主。</p>
+<p>首先我們對電影的上市日期做了初步的分析，透過文字處理將資料切割成年份及日期後，我們從中發現在數據中，電影的發布年份在 1993 年之後呈現爆發式增長，經查證後發現在當年大該發生了這些事件：</p>
+<ol>
+<li>
+<p>《侏羅紀公園》的電腦生成圖像 (CGI)：這部電影由史蒂芬·斯皮爾伯格執導，標誌著 CGI 技術在電影中的重大飛躍。《侏羅紀公園》使用了創新的電腦生成技術來創造真實的恐龍，這在當時是前所未有的。這不僅推動了視覺特效的極限，也改變了未來電影製作的方式。</p>
+</li>
+<li>
+<p>數字音效和 Dolby SR-D 音效系統：1993 年也見證了音效技術的進步。Dolby SR-D（現在稱為Dolby Digital）是首次在商業電影院提供的數字音效系統，首次應用在《侏羅紀公園》中，提供更清晰、更動態的聲音體驗。</p>
+</li>
+<li>
+<p>柯達的 Cineon 數位影像系統：該系統於 1993 年推向商業市場，對電影行業的數字後期製作領域產生了重要的影響。Cineon 系統是一種先進的數位影像處理系統，它允許用戶對攝影底片進行高質量的掃描、處理、和輸出，從而實現數字化的非線性編輯和色彩校正。這一系統的推出標誌著從傳統的底片處理向數位工作流程的重要轉變。</p>
+</li>
+</ol>
+<p>我們猜測是由於電影製作成本與技術門檻的下降及侏羅紀公園上映後大眾對電影燃起了興趣，進而使電影產業如雨後春筍般產出許多運用新技術的作品。</p>
+<p>
+
+
+
+
+
+
+<figure>
+    <img class="my-0 rounded-md" loading="lazy" alt="" src="/images/R_recommender/Rplot03.png">
+
+  
+</figure>
+</p>
+<p>但是當我們進一步剖析資料後發現，電影的上映日期上具有很大的問題，竟然有超過六成的電影是在一月一日上映的，這顯然不合理，我們因此並沒有對日期內的資訊做進一步的挖掘。</p>
+<p>
+
+
+
+
+
+
+<figure>
+    <img class="my-0 rounded-md" loading="lazy" alt="" src="/images/R_recommender/Rplot04.png">
+
+  
+</figure>
+</p>
+<p>接著我們先關注到的是電影的類別，我們好奇這個離散且稀疏的矩陣中含有哪些隱藏的資訊，讓我們先來關注每個類別分別有多少電影。我們可以從圖中看出劇集、喜劇、動作、驚悚與浪漫依序為最多的前五類。</p>
+<p>
+
+
+
+
+
+
+<figure>
+    <img class="my-0 rounded-md" loading="lazy" alt="" src="/images/R_recommender/Rplot.png">
+
+  
+</figure>
+</p>
+<p>由於每個電影的類別不只擁有一類的緣故，因此我們決定觀察一下每部電影它們類別的數量分佈來做進一步的了解，而我們從中發現約有百分之八十的資料具有一至兩個類別，而擁有三個以上類別的資料是十分稀少的，由於想要視覺化它必須先進一步處理，因此我們先將剩下的發現透過 Jaccard 與 PCA 的方式做進一步解析。</p>
+<p>
+
+
+
+
+
+
+<figure>
+    <img class="my-0 rounded-md" loading="lazy" alt="" src="/images/R_recommender/Rplot02.png">
+
+  
+</figure>
+</p>
+
+<h3 class="relative group">Jaccard 
+    <div id="jaccard" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#jaccard" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>這裡我們簡單介紹一下 Jaccard 這個方法，它是用於計算兩個集合 $U$ 和 $V$ 的相似度，公式如下所示。</p>
+<p>
+
+\(
+J(U,V) = \frac{|U \cap V|}{|U \cup V|}
+\)</p>
+<p>為了能更淺顯易懂的解釋它，讓我來舉一個簡單的例子：</p>
+<p>今天有 
+ \( U \) 和 
+ \( V \) 兩名顧客進入賣場買東西，我們想知道他們兩人所消費的物品相似度有多高。接著我們假設 
+ \( U \) 買了礦泉水和洋芋片，而 
+ \( V \) 買了汽水及洋芋片，那麼他們兩人的交集 
+ \( U \cap V \) 只有洋芋片一項物品，而他們的聯集 
+ \( U \cup V \) 有礦泉水、汽水和洋芋片，那麼他們兩人的 Jaccard 相似度便是 
+ \( \frac{1}{3} \)。同理可知若是兩個人買了完全一樣的物品，那麼他們的相似度便會是 1，反之，若兩人沒有購買任何相同的物品，那麼他們的相似度便會是 0。</p>
+<p>接著我們再來講解一下與相似度相同的一個概念，它便是 Jaccard 距離。</p>
+<p>
+
+\(
+d_J(U,V) = 1 - \frac{|U \cap V|}{|U \cup V|}
+\)</p>
+<p>Jaccard 距離便是將原本相似度的概念翻轉過來，若是兩個人買了完全一樣的物品，那麼他們的距離便會是 0，反之，若兩人沒有購買任何相同的物品，那麼他們的距離便會是 1。</p>
+<p>下面讓我們來看看原本離散的矩陣透過 Jaccard 轉置後所得到的，下面分別是原始的稀疏矩陣及以電影類別分類轉置後的距離矩陣，透過 Jaccard 算法可以讓我們在後續進行數據將維及視覺化的效果有更近一步的提升。</p>
+<p>
+
+
+
+
+
+
+<figure>
+    <img class="my-0 rounded-md" loading="lazy" alt="" src="/images/R_recommender/plot1.png">
+
+  
+</figure>
+</p>
+<p>
+
+
+
+
+
+
+<figure>
+    <img class="my-0 rounded-md" loading="lazy" alt="" src="/images/R_recommender/plot2.png">
+
+  
+</figure>
+</p>
+<p>至於主成分分析（PCA）和 t 分佈隨機鄰近嵌入（t-SNE）兩個算法，由於這裡的篇幅有限就不詳細說明，後續我會新增關於這兩個算法的詳細解說。</p>
+
+<h3 class="relative group">Dimension Reduction 
+    <div id="dimension-reduction" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#dimension-reduction" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>接著讓我們來用圖片來展示將電影類別資料視覺化後的成果，又因為在三維空間能更好的說明它，因此我也製作了<a
+  href="/html/MovieLens_100k_Recommender_System.html#Dimension_Reduction">可互動式的網頁連結</a>
+，裡面分別有原始的程式檔及可以進行縮放及旋轉的圖片，以便於搭配文字說明可以更好的理解內容。</p>
+<p>首先我們先來看到第一張圖中左上角的三個點，它們分別是浪漫、喜劇及劇集，這三種類型的電影相較於其他類型較為互相接近，它們的距離可以被我們解釋為較為相似的主題，而第一張圖中間靠右的三個點他們分別是動作、冒險及科幻，</p>
+<p>
+
+
+
+
+
+
+<figure>
+    <img class="my-0 rounded-md" loading="lazy" alt="" src="/images/R_recommender/Rplot05_zhtw.png">
+
+  
+</figure>
+</p>
+<p>而下方的群體便需要我們轉動角度才能更好的觀察它們，我們可以在第二張圖下方看到的三個點分別是音樂、卡通及兒童。</p>
+<p>
+
+
+
+
+
+
+<figure>
+    <img class="my-0 rounded-md" loading="lazy" alt="" src="/images/R_recommender/Rplot06_zhtw.png">
+
+  
+</figure>
+</p>
+<p>最後我們可以將剩下的點大致上看成三個區塊，他們分別是驚悚與恐怖片、西部與紀錄片、神秘黑暗的犯罪電影。</p>
+<p>
+
+
+
+
+
+
+<figure>
+    <img class="my-0 rounded-md" loading="lazy" alt="" src="/images/R_recommender/Rplot07_zhtw.png">
+
+  
+</figure>
+</p>
+<p>從上面的圖我們可以很好的釐清電影類別之間的關係，同時他們的距離關係也可以被合理的解釋。但因為這次報告時間的緣故，我們並沒有將這個視覺化成果的資訊加入後續的模型中，但這對我而言是一個對數據處理新的嘗試，同時也在分類上做出了不錯的成效。</p>
+<hr>
+
+<h2 class="relative group">Recommender System 
+    <div id="recommender-system" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#recommender-system" aria-label="定位點">#</a>
+    </span>        
+    
+</h2>
+<p>在開始構築推薦系統前，我們先對資料進行了刪減，原因是我們認為，要將該條評分用於構建推薦系統需要滿足以下兩個條件：</p>
+<ol>
+<li>
+<p>該名評分的使用者必須要曾評分過足夠多的電影，那麼他的評分相對只評過一兩部電影的人而言，分數會較為具有參考性，因為它的評分是建立在一定的樣本基數上的。</p>
+</li>
+<li>
+<p>電影同樣也須收到足夠的評分才會被用於訓練模型。</p>
+</li>
+</ol>
+<p>經過對不同組參數的設定比較，我們最終決定採用曾評分過 50 則評分的使用者與曾收到 50 則評分的電影作為訓練資料。而經過我們的篩選，評分剩下 73544條，參與的使用者與電影也從 943 位使用者對 1682 部電影的評價變成 568 位使用者對 603 部電影的評價。</p>
+<p>接著我們定義模型訓練時，用戶必須給出從1-5分的範圍中給出4分才算是對於這部電影的正面評價，同時我們採用K折交叉驗證（K-Fold Cross Validation）來確保模型不會過度擬合，在這裡的模型建構中，我們將K設定為5。接下拉讓我們來簡單的介紹一下這次分析有使用到的方法。同時原始程式與推薦出的結果我將它放在下方不同推薦系統標題中的連結。</p>
+<hr>
+
+<h3 class="relative group"><a
+  href="/html/MovieLens_100k_Recommender_System.html#User_Base_CF">User-Based Collaborative Filtering</a>
+ 
+    <div id="user-based-collaborative-filtering" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#user-based-collaborative-filtering" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>首先是用戶為基礎的協同過濾，又簡稱為（User-Based CF）是一種基於用戶相似度的推薦方法。該方法假設如果兩個用戶對相似的物品評分相似，那麼他們在其他物品上的評分也可能相似。目標為通過找出與目標用戶評分行為相似的用戶，向目標用戶推薦這些相似用戶喜歡的物品。</p>
+<p>他的優點為容易理解和實現，並且當有大量用戶評分數據時，推薦效果較好。但他也有隨著用戶數量增長，計算相似度的開銷將會變得很大導致效率低下的問題，同時也會面臨冷啟動問題，也就是當有新物品進入推薦系統時，由於資料量不足，系統無法第一時間抓取足夠的數據以在空間中定義相似度的情況。</p>
+<hr>
+
+<h3 class="relative group"><a
+  href="/html/MovieLens_100k_Recommender_System.html#Item_Base_CF">Item-Based Collaborative Filtering</a>
+ 
+    <div id="item-based-collaborative-filtering" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#item-based-collaborative-filtering" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>接著是以物品為基礎的協同過濾（Item-Based CF），是基於物品相似度的推薦方法。該方法假設如果一個用戶喜歡某個物品，他可能會喜歡與之相似的物品。因此我們通過找出與目標物品相似的物品，進而可以向用戶推薦這些相似物品。</p>
+<p>優點為當物品數量相對穩定時，計算效率較高。並且在用戶的冷啟動問題相較而言較容易處理。不過當物品數量巨大時，計算相似度的開銷仍然很大，同時依然面臨在推薦新物品時的冷啟動問題。</p>
+<hr>
+
+<h3 class="relative group"><a
+  href="/html/MovieLens_100k_Recommender_System.html#FunkSVD">FunkSVD</a>
+ 
+    <div id="funksvd" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#funksvd" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>最後則是 FunkSVD，它是一種基於矩陣分解的推薦算法，利用奇異值分解（Singular Value Decomposition，SVD）來分解用戶與物品的評分矩陣，試圖將用戶和物品映射到一個共同的潛在特徵空間，並基於這些潛在由線性組合生成的特徵進行推薦。</p>
+<p>它的優點為能夠捕捉到用戶和物品的隱含特徵，並且對於稀疏矩陣表現優秀又能夠處理大規模數據。但是訓練過程較慢，尤其是當數據量很大時更是如此。</p>
+<hr>
+<p>我們可以在下方的 ROC曲線 看到不同推薦系統在推薦不同數量電影時的表現，可以看出FunkSVD作出的推薦相較其他模型更為精準，但其他兩個模型也相較隨機推薦的效果來的佳，作為構建成本較低的方案也不失為一個選擇。</p>
+<p>
+
+
+
+
+
+
+<figure>
+    <img class="my-0 rounded-md" loading="lazy" alt="" src="/images/R_recommender/Rplot08.png">
+
+  
+</figure>
+</p>
+<p>最後為了能更直觀的看出各個推薦系統之間的效果，我們也繪製了比較模型與真實評分誤差的圖表以供參考。</p>
+<p>
+
+
+
+
+
+
+<figure>
+    <img class="my-0 rounded-md" loading="lazy" alt="" src="/images/R_recommender/Rplot09.png">
+
+  
+</figure>
+</p>
+<hr>
+
+<h2 class="relative group">Conclusion 
+    <div id="conclusion" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#conclusion" aria-label="定位點">#</a>
+    </span>        
+    
+</h2>
+<p>我們在這次的資料分析中嘗試了不同類型目標的模型建構，透過我們建構的模型可以看出不同方法在這次的電影資料中具有不同的效果，而這些方法所適合的資料類型也不盡相同，但他們都在這次的建模中發揮不錯的成效。同時我們也將電影的類別透過 PCA 求得特徵向量後在視覺化做呈現，這讓我們更加釐清電影之間的關係，也為後續 FunkSVD 的模型建構做先一步的數據探索。</p>
+<hr>
+<p><strong>後續工作與感想</strong></p>
+<p>關於這筆資料我們或許可以將其做成 ShinyApps 將其連結至網路做更好的結果展示，同時也能嘗試將前面所提取出的特徵進一步優化模型的效果。而最後我對這次報告的經驗讓我於推薦系統領域獲益良多，讓我得以繼續在資料分析領域尋找許多不同的問題去細細品味。</p>
+
+          
+          
+          
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+      </div>
+
+      
+      
+        
+        
+          
+          
+        
+        
+        
+        <script
+          type="text/javascript"
+          src="/js/page.min.407e5b2727c1f241c95d53db24c776bea71bfc18e09511b815d669ad8caca6e9e18a53864ad364b1ccccfa2f2956768d33cfe193bfb64d3406f3b5ece354ba57.js"
+          integrity="sha512-QH5bJyfB8kHJXVPbJMd2vqcb/BjglRG4FdZprYyspunhilOGStNksczM&#43;i8pVnaNM8/hk7&#43;2TTQG87Xs41S6Vw=="
+          data-oid="views_projects/R_recommender.md"
+          data-oid-likes="likes_projects/R_recommender.md"></script>
+      
+
+    </section>
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/projects/kaggle_s3e14/">
+              <span class="flex flex-col">
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >藍莓產量預測報告</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2023-06-05T00:00:00&#43;00:00">5 June 2023</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a
+    href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="捲動到頁頂"
+    title="捲動到頁頂">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+      <nav class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
+        <ul class="flex flex-col list-none sm:flex-row">
+          
+            <li
+              class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="/categories/"
+                title="Categories">
+                
+                Categories
+              </a>
+            </li>
+          
+            <li
+              class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="/tags/"
+                title="Tags">
+                
+                Tags
+              </a>
+            </li>
+          
+            <li
+              class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="/series/"
+                title="Series">
+                
+                Series
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          期許自己能在資料科學的路上走得更遠
+      </p>
+    
+
+    
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script> 
+  
+  <script
+    type="text/javascript"
+    src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js"
+    integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-index-500"
+  data-url="https://chenghanshih.github.io/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="搜尋"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="關閉 (Esc)">
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>

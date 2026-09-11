@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Hans Website</title>
+    <link>https://chenghanshih.github.io/tags/</link>
+    <description>Recent content in Tags on Hans Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>期許自己能在資料科學的路上走得更遠</copyright>
+    <lastBuildDate>Fri, 12 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://chenghanshih.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Data-Processing</title>
+      <link>https://chenghanshih.github.io/tags/data-processing/</link>
+      <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/data-processing/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://chenghanshih.github.io/tags/r/</link>
+      <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/r/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Flask</title>
+      <link>https://chenghanshih.github.io/tags/flask/</link>
+      <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/flask/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://chenghanshih.github.io/tags/python/</link>
+      <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/python/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Web-Framework</title>
+      <link>https://chenghanshih.github.io/tags/web-framework/</link>
+      <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/web-framework/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Regex</title>
+      <link>https://chenghanshih.github.io/tags/regex/</link>
+      <pubDate>Wed, 19 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/regex/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Text-Mining</title>
+      <link>https://chenghanshih.github.io/tags/text-mining/</link>
+      <pubDate>Wed, 19 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/text-mining/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Database</title>
+      <link>https://chenghanshih.github.io/tags/database/</link>
+      <pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/database/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Mongodb</title>
+      <link>https://chenghanshih.github.io/tags/mongodb/</link>
+      <pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/mongodb/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Nosql</title>
+      <link>https://chenghanshih.github.io/tags/nosql/</link>
+      <pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/nosql/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Modeling</title>
+      <link>https://chenghanshih.github.io/tags/modeling/</link>
+      <pubDate>Sun, 09 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/modeling/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Statistics</title>
+      <link>https://chenghanshih.github.io/tags/statistics/</link>
+      <pubDate>Sun, 09 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/statistics/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Mysql</title>
+      <link>https://chenghanshih.github.io/tags/mysql/</link>
+      <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/mysql/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Sql</title>
+      <link>https://chenghanshih.github.io/tags/sql/</link>
+      <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/sql/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Api</title>
+      <link>https://chenghanshih.github.io/tags/api/</link>
+      <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/api/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>https://chenghanshih.github.io/tags/visualization/</link>
+      <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/visualization/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Machine-Learning</title>
+      <link>https://chenghanshih.github.io/tags/machine-learning/</link>
+      <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/machine-learning/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Sampling</title>
+      <link>https://chenghanshih.github.io/tags/sampling/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/sampling/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Simulation</title>
+      <link>https://chenghanshih.github.io/tags/simulation/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/tags/simulation/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

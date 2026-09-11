@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Regex on Hans Website</title>
+    <link>https://chenghanshih.github.io/series/regex/</link>
+    <description>Recent content in Regex on Hans Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>期許自己能在資料科學的路上走得更遠</copyright>
+    <lastBuildDate>Wed, 19 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://chenghanshih.github.io/series/regex/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>使用正則表達式在 R 語言中挖掘文本資訊</title>
+      <link>https://chenghanshih.github.io/posts/code_regex/</link>
+      <pubDate>Wed, 19 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/code_regex/</guid>
+      <description>關於正則表達式在資料處理中的用法及示例</description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data-Processing on Hans Website</title>
+    <link>https://chenghanshih.github.io/tags/data-processing/</link>
+    <description>Recent content in Data-Processing on Hans Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>期許自己能在資料科學的路上走得更遠</copyright>
+    <lastBuildDate>Fri, 12 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://chenghanshih.github.io/tags/data-processing/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>解決 Excel 寫入系統保留字元時導致的錯誤</title>
+      <link>https://chenghanshih.github.io/posts/r_excelwrite/</link>
+      <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/r_excelwrite/</guid>
+      <description>我們將在這篇文章中說明及解決在使用 R 寫入文本大數據至 Excel 時遇到的檔案損毀問題</description>
+      
+    </item>
+    
+    <item>
+      <title>BGG 桌遊地圖</title>
+      <link>https://chenghanshih.github.io/projects/master_bgg/</link>
+      <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/projects/master_bgg/</guid>
+      <description>透過抓取 BoardGameGeek 桌遊網站的遊戲資料後，將不同桌遊彼此之間距離進行可解釋的資料視覺化</description>
+      
+    </item>
+    
+    <item>
+      <title>藍莓產量預測報告</title>
+      <link>https://chenghanshih.github.io/projects/kaggle_s3e14/</link>
+      <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/projects/kaggle_s3e14/</guid>
+      <description>利用從 Kaggle 競賽中提供的野生藍莓產量預測數據，開發多個基於不同機器學習方法，用於估算野生藍莓產量的預測模型</description>
+      
+    </item>
+    
+  </channel>
+</rss>

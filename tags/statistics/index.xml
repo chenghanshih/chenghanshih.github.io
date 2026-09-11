@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statistics on Hans Website</title>
+    <link>https://chenghanshih.github.io/tags/statistics/</link>
+    <description>Recent content in Statistics on Hans Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>期許自己能在資料科學的路上走得更遠</copyright>
+    <lastBuildDate>Sun, 09 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://chenghanshih.github.io/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>基於 F-value 的 Stepwise Model Selection</title>
+      <link>https://chenghanshih.github.io/posts/r_stepwise/</link>
+      <pubDate>Sun, 09 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/r_stepwise/</guid>
+      <description>以 R 語言實作基於 F-value 的 Forward 及 Backward Stepwise Model Selection，並將其製作成函數及 package</description>
+      
+    </item>
+    
+    <item>
+      <title>拒絕抽樣實作</title>
+      <link>https://chenghanshih.github.io/posts/r_rejection_sampling/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/r_rejection_sampling/</guid>
+      <description>以蒙地卡羅法來將目標函數以覆蓋接受域來實現拒絕抽樣</description>
+      
+    </item>
+    
+    <item>
+      <title>多種積分函數實作</title>
+      <link>https://chenghanshih.github.io/posts/r_intergate/</link>
+      <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/r_intergate/</guid>
+      <description>使用黎曼積分法、梯形積分法、辛普森積分法及蒙地卡羅積分法來模擬程式計算積分的過程</description>
+      
+    </item>
+    
+  </channel>
+</rss>

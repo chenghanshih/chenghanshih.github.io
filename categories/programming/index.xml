@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on Hans Website</title>
+    <link>https://chenghanshih.github.io/categories/programming/</link>
+    <description>Recent content in Programming on Hans Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>期許自己能在資料科學的路上走得更遠</copyright>
+    <lastBuildDate>Fri, 12 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://chenghanshih.github.io/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>解決 Excel 寫入系統保留字元時導致的錯誤</title>
+      <link>https://chenghanshih.github.io/posts/r_excelwrite/</link>
+      <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/r_excelwrite/</guid>
+      <description>我們將在這篇文章中說明及解決在使用 R 寫入文本大數據至 Excel 時遇到的檔案損毀問題</description>
+      
+    </item>
+    
+    <item>
+      <title>使用正則表達式在 R 語言中挖掘文本資訊</title>
+      <link>https://chenghanshih.github.io/posts/code_regex/</link>
+      <pubDate>Wed, 19 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/code_regex/</guid>
+      <description>關於正則表達式在資料處理中的用法及示例</description>
+      
+    </item>
+    
+    <item>
+      <title>如何使用 Python 處理 MongoDB 中的數據</title>
+      <link>https://chenghanshih.github.io/posts/sql_mongodb_py/</link>
+      <pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/sql_mongodb_py/</guid>
+      <description>以 Python 連線至本地端的 MongoDB，並且結合 pandas 來演示基本的 CRUD 操作</description>
+      
+    </item>
+    
+    <item>
+      <title>如何使用 R 處理 MongoDB 中的數據</title>
+      <link>https://chenghanshih.github.io/posts/sql_mongodb_r/</link>
+      <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/sql_mongodb_r/</guid>
+      <description>使用 R 連線至本地端的 MongoDB，並透過實際的程式演示來進行資料庫的基本 CRUD 操作</description>
+      
+    </item>
+    
+    <item>
+      <title>如何在 Mac 上部署 MongoDB Server</title>
+      <link>https://chenghanshih.github.io/posts/sql_mongodb/</link>
+      <pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/sql_mongodb/</guid>
+      <description>在這篇文章中我將介紹如何在 Mac 電腦上部署本地端的 MongoDB</description>
+      
+    </item>
+    
+    <item>
+      <title>SQLZOO解答與討論（More JOIN）</title>
+      <link>https://chenghanshih.github.io/posts/sql_sqlzoo_morejoinans/</link>
+      <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/sql_sqlzoo_morejoinans/</guid>
+      <description>在 SQLZOO More JOIN 章節練習時的習題實作及詳解</description>
+      
+    </item>
+    
+    <item>
+      <title>SQLZOO解答與討論（JOIN）</title>
+      <link>https://chenghanshih.github.io/posts/sql_-sqlzoo_joinans/</link>
+      <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/sql_-sqlzoo_joinans/</guid>
+      <description>在 SQLZOO JOIN 章節練習時的習題實作及詳解</description>
+      
+    </item>
+    
+  </channel>
+</rss>

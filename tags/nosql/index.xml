@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nosql on Hans Website</title>
+    <link>https://chenghanshih.github.io/tags/nosql/</link>
+    <description>Recent content in Nosql on Hans Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>期許自己能在資料科學的路上走得更遠</copyright>
+    <lastBuildDate>Wed, 12 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://chenghanshih.github.io/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>如何在 Mac 上部署 MongoDB Server</title>
+      <link>https://chenghanshih.github.io/posts/sql_mongodb/</link>
+      <pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/sql_mongodb/</guid>
+      <description>在這篇文章中我將介紹如何在 Mac 電腦上部署本地端的 MongoDB</description>
+      
+    </item>
+    
+  </channel>
+</rss>

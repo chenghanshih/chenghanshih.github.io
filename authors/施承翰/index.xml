@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>施承翰 on Hans Website</title>
+    <link>https://chenghanshih.github.io/authors/%E6%96%BD%E6%89%BF%E7%BF%B0/</link>
+    <description>Recent content in 施承翰 on Hans Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>期許自己能在資料科學的路上走得更遠</copyright>
+    <lastBuildDate>Fri, 12 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://chenghanshih.github.io/authors/%E6%96%BD%E6%89%BF%E7%BF%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>解決 Excel 寫入系統保留字元時導致的錯誤</title>
+      <link>https://chenghanshih.github.io/posts/r_excelwrite/</link>
+      <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/r_excelwrite/</guid>
+      <description>我們將在這篇文章中說明及解決在使用 R 寫入文本大數據至 Excel 時遇到的檔案損毀問題</description>
+      
+    </item>
+    
+    <item>
+      <title>快速上手 Flask：從安裝到第一個網頁</title>
+      <link>https://chenghanshih.github.io/posts/python_flask1/</link>
+      <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/python_flask1/</guid>
+      <description>這篇文章教你如何安裝 Flask，並建立由簡單程式碼所架設的網頁</description>
+      
+    </item>
+    
+    <item>
+      <title>使用正則表達式在 R 語言中挖掘文本資訊</title>
+      <link>https://chenghanshih.github.io/posts/code_regex/</link>
+      <pubDate>Wed, 19 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/code_regex/</guid>
+      <description>關於正則表達式在資料處理中的用法及示例</description>
+      
+    </item>
+    
+    <item>
+      <title>如何使用 Python 處理 MongoDB 中的數據</title>
+      <link>https://chenghanshih.github.io/posts/sql_mongodb_py/</link>
+      <pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/sql_mongodb_py/</guid>
+      <description>以 Python 連線至本地端的 MongoDB，並且結合 pandas 來演示基本的 CRUD 操作</description>
+      
+    </item>
+    
+    <item>
+      <title>如何使用 R 處理 MongoDB 中的數據</title>
+      <link>https://chenghanshih.github.io/posts/sql_mongodb_r/</link>
+      <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/sql_mongodb_r/</guid>
+      <description>使用 R 連線至本地端的 MongoDB，並透過實際的程式演示來進行資料庫的基本 CRUD 操作</description>
+      
+    </item>
+    
+    <item>
+      <title>如何在 Mac 上部署 MongoDB Server</title>
+      <link>https://chenghanshih.github.io/posts/sql_mongodb/</link>
+      <pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/sql_mongodb/</guid>
+      <description>在這篇文章中我將介紹如何在 Mac 電腦上部署本地端的 MongoDB</description>
+      
+    </item>
+    
+    <item>
+      <title>基於 F-value 的 Stepwise Model Selection</title>
+      <link>https://chenghanshih.github.io/posts/r_stepwise/</link>
+      <pubDate>Sun, 09 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/r_stepwise/</guid>
+      <description>以 R 語言實作基於 F-value 的 Forward 及 Backward Stepwise Model Selection，並將其製作成函數及 package</description>
+      
+    </item>
+    
+    <item>
+      <title>SQLZOO解答與討論（More JOIN）</title>
+      <link>https://chenghanshih.github.io/posts/sql_sqlzoo_morejoinans/</link>
+      <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/sql_sqlzoo_morejoinans/</guid>
+      <description>在 SQLZOO More JOIN 章節練習時的習題實作及詳解</description>
+      
+    </item>
+    
+    <item>
+      <title>SQLZOO解答與討論（JOIN）</title>
+      <link>https://chenghanshih.github.io/posts/sql_-sqlzoo_joinans/</link>
+      <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/sql_-sqlzoo_joinans/</guid>
+      <description>在 SQLZOO JOIN 章節練習時的習題實作及詳解</description>
+      
+    </item>
+    
+    <item>
+      <title>繪製基於 GGMap 的公車路線圖</title>
+      <link>https://chenghanshih.github.io/posts/r_ggmap/</link>
+      <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/r_ggmap/</guid>
+      <description>使用 R 語言調用 Google Map Api 來繪製附加公車站牌資訊的地圖</description>
+      
+    </item>
+    
+    <item>
+      <title>BGG 桌遊地圖</title>
+      <link>https://chenghanshih.github.io/projects/master_bgg/</link>
+      <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/projects/master_bgg/</guid>
+      <description>透過抓取 BoardGameGeek 桌遊網站的遊戲資料後，將不同桌遊彼此之間距離進行可解釋的資料視覺化</description>
+      
+    </item>
+    
+    <item>
+      <title>藍莓產量預測報告</title>
+      <link>https://chenghanshih.github.io/projects/kaggle_s3e14/</link>
+      <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/projects/kaggle_s3e14/</guid>
+      <description>利用從 Kaggle 競賽中提供的野生藍莓產量預測數據，開發多個基於不同機器學習方法，用於估算野生藍莓產量的預測模型</description>
+      
+    </item>
+    
+    <item>
+      <title>MovieLens 100k 推薦系統</title>
+      <link>https://chenghanshih.github.io/projects/r_recommender/</link>
+      <pubDate>Wed, 21 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/projects/r_recommender/</guid>
+      <description>運用電影評分資料資料嘗試構建基於不同方法的推薦系統</description>
+      
+    </item>
+    
+    <item>
+      <title>拒絕抽樣實作</title>
+      <link>https://chenghanshih.github.io/posts/r_rejection_sampling/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/r_rejection_sampling/</guid>
+      <description>以蒙地卡羅法來將目標函數以覆蓋接受域來實現拒絕抽樣</description>
+      
+    </item>
+    
+    <item>
+      <title>多種積分函數實作</title>
+      <link>https://chenghanshih.github.io/posts/r_intergate/</link>
+      <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/r_intergate/</guid>
+      <description>使用黎曼積分法、梯形積分法、辛普森積分法及蒙地卡羅積分法來模擬程式計算積分的過程</description>
+      
+    </item>
+    
+  </channel>
+</rss>

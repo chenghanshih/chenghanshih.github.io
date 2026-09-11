@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Hans Website</title>
+    <link>https://chenghanshih.github.io/tags/python/</link>
+    <description>Recent content in Python on Hans Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>期許自己能在資料科學的路上走得更遠</copyright>
+    <lastBuildDate>Wed, 10 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://chenghanshih.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>快速上手 Flask：從安裝到第一個網頁</title>
+      <link>https://chenghanshih.github.io/posts/python_flask1/</link>
+      <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/python_flask1/</guid>
+      <description>這篇文章教你如何安裝 Flask，並建立由簡單程式碼所架設的網頁</description>
+      
+    </item>
+    
+    <item>
+      <title>如何使用 Python 處理 MongoDB 中的數據</title>
+      <link>https://chenghanshih.github.io/posts/sql_mongodb_py/</link>
+      <pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/sql_mongodb_py/</guid>
+      <description>以 Python 連線至本地端的 MongoDB，並且結合 pandas 來演示基本的 CRUD 操作</description>
+      
+    </item>
+    
+  </channel>
+</rss>

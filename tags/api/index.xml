@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Api on Hans Website</title>
+    <link>https://chenghanshih.github.io/tags/api/</link>
+    <description>Recent content in Api on Hans Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>期許自己能在資料科學的路上走得更遠</copyright>
+    <lastBuildDate>Sat, 20 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://chenghanshih.github.io/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>繪製基於 GGMap 的公車路線圖</title>
+      <link>https://chenghanshih.github.io/posts/r_ggmap/</link>
+      <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://chenghanshih.github.io/posts/r_ggmap/</guid>
+      <description>使用 R 語言調用 Google Map Api 來繪製附加公車站牌資訊的地圖</description>
+      
+    </item>
+    
+  </channel>
+</rss>
