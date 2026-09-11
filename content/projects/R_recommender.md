@@ -58,7 +58,7 @@ Our ultimate goal is to use parts of this data to build a movie recommender syst
 
 ## Movie and User Data
 
-We didn’t find much from the user data, but you can see the [user charts here](https://hans0803.github.io/myhtml.io/MovieLens_100k_Recommender_System.html#User). Our analysis will focus on the movie data.
+We didn’t find much from the user data, but you can see the [user charts here](/html/MovieLens_100k_Recommender_System.html#User). Our analysis will focus on the movie data.
 
 First, we performed a preliminary analysis of the movie release dates. By splitting the data into years and dates, we found an explosive growth in movie releases after 1993. Upon investigation, we discovered the following events that likely contributed to this surge:
 
@@ -114,7 +114,7 @@ Due to space limitations, I won't detail Principal Component Analysis (PCA) and 
 
 ## Dimension Reduction
 
-Next, let’s visualize the movie genre data. Since a 3D space better illustrates the relationships, I also created an [interactive web link](https://hans0803.github.io/myhtml.io/MovieLens_100k_Recommender_System.html#Dimension_Reduction) with original code and zoomable, rotatable images for better understanding.
+Next, let’s visualize the movie genre data. Since a 3D space better illustrates the relationships, I also created an [interactive web link](/html/MovieLens_100k_Recommender_System.html#Dimension_Reduction) with original code and zoomable, rotatable images for better understanding.
 
 In the first image, the top left three points represent Romance, Comedy, and Drama, which are closer to each other compared to other genres, indicating similar themes. The three points in the middle-right represent Action, Adventure, and Sci-Fi.
 
@@ -146,7 +146,7 @@ We defined that a user rating a movie 4 or above was a positive review and used 
 
 ---
 
-## [User-Based Collaborative Filtering](https://hans0803.github.io/myhtml.io/MovieLens_100k_Recommender_System.html#User_Base_CF)
+## [User-Based Collaborative Filtering](/html/MovieLens_100k_Recommender_System.html#User_Base_CF)
 
 User-Based Collaborative Filtering (User-Based CF) is a recommendation method based on user similarity. It assumes that if two users rate similar items similarly, they are likely to rate other items similarly. The goal is to recommend items liked by users with similar rating behaviors to the target user.
 
@@ -154,13 +154,13 @@ Its advantages are ease of understanding and implementation, and good recommenda
 
 ---
 
-## [Item-Based Collaborative Filtering](https://hans0803.github.io/myhtml.io/MovieLens_100k_Recommender_System.html#Item_Base_CF)
+## [Item-Based Collaborative Filtering](/html/MovieLens_100k_Recommender_System.html#Item_Base_CF)
 
 Item-Based Collaborative Filtering (Item-Based CF) is a recommendation method based on item similarity. It assumes that if a user likes an item, they may like similar items. Therefore, by finding items similar to the target item, we can recommend these similar items to the user.
 
 Its advantages are higher computational efficiency when the number of items is relatively stable and easier handling of user cold start problems. However, when the number of items is large, the computational cost of calculating similarities is still high, and it still faces the cold start problem when recommending new items.
 
-## [FunkSVD](https://hans0803.github.io/myhtml.io/MovieLens_100k_Recommender_System.html#FunkSVD)
+## [FunkSVD](/html/MovieLens_100k_Recommender_System.html#FunkSVD)
 
 FunkSVD is a recommendation algorithm based on matrix factorization, using Singular Value Decomposition (SVD) to decompose the user-item rating matrix. It maps users and items to a common latent feature space and makes recommendations based on these linearly combined latent features.
 

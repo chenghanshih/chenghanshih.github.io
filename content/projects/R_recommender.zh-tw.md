@@ -58,7 +58,7 @@ tags : [
 
 ### Movies and User Data
 
-由於在使用者的數據上我們並沒有太多的發現，這是關於[使用者圖表的連結](https://hans0803.github.io/myhtml.io/MovieLens_100k_Recommender_System.html#User)，我們這裡的分析會以電影資料為主。
+由於在使用者的數據上我們並沒有太多的發現，這是關於[使用者圖表的連結](/html/MovieLens_100k_Recommender_System.html#User)，我們這裡的分析會以電影資料為主。
 
 首先我們對電影的上市日期做了初步的分析，透過文字處理將資料切割成年份及日期後，我們從中發現在數據中，電影的發布年份在 1993 年之後呈現爆發式增長，經查證後發現在當年大該發生了這些事件：
 
@@ -116,7 +116,7 @@ Jaccard 距離便是將原本相似度的概念翻轉過來，若是兩個人買
 
 ### Dimension Reduction
 
-接著讓我們來用圖片來展示將電影類別資料視覺化後的成果，又因為在三維空間能更好的說明它，因此我也製作了[可互動式的網頁連結](https://hans0803.github.io/myhtml.io/MovieLens_100k_Recommender_System.html#Dimension_Reduction)，裡面分別有原始的程式檔及可以進行縮放及旋轉的圖片，以便於搭配文字說明可以更好的理解內容。
+接著讓我們來用圖片來展示將電影類別資料視覺化後的成果，又因為在三維空間能更好的說明它，因此我也製作了[可互動式的網頁連結](/html/MovieLens_100k_Recommender_System.html#Dimension_Reduction)，裡面分別有原始的程式檔及可以進行縮放及旋轉的圖片，以便於搭配文字說明可以更好的理解內容。
 
 首先我們先來看到第一張圖中左上角的三個點，它們分別是浪漫、喜劇及劇集，這三種類型的電影相較於其他類型較為互相接近，它們的距離可以被我們解釋為較為相似的主題，而第一張圖中間靠右的三個點他們分別是動作、冒險及科幻，
 
@@ -148,7 +148,7 @@ Jaccard 距離便是將原本相似度的概念翻轉過來，若是兩個人買
 
 ---
 
-### [User-Based Collaborative Filtering](https://hans0803.github.io/myhtml.io/MovieLens_100k_Recommender_System.html#User_Base_CF)
+### [User-Based Collaborative Filtering](/html/MovieLens_100k_Recommender_System.html#User_Base_CF)
 
 首先是用戶為基礎的協同過濾，又簡稱為（User-Based CF）是一種基於用戶相似度的推薦方法。該方法假設如果兩個用戶對相似的物品評分相似，那麼他們在其他物品上的評分也可能相似。目標為通過找出與目標用戶評分行為相似的用戶，向目標用戶推薦這些相似用戶喜歡的物品。
 
@@ -156,7 +156,7 @@ Jaccard 距離便是將原本相似度的概念翻轉過來，若是兩個人買
 
 ---
 
-### [Item-Based Collaborative Filtering](https://hans0803.github.io/myhtml.io/MovieLens_100k_Recommender_System.html#Item_Base_CF)
+### [Item-Based Collaborative Filtering](/html/MovieLens_100k_Recommender_System.html#Item_Base_CF)
 
 接著是以物品為基礎的協同過濾（Item-Based CF），是基於物品相似度的推薦方法。該方法假設如果一個用戶喜歡某個物品，他可能會喜歡與之相似的物品。因此我們通過找出與目標物品相似的物品，進而可以向用戶推薦這些相似物品。
 
@@ -164,7 +164,7 @@ Jaccard 距離便是將原本相似度的概念翻轉過來，若是兩個人買
 
 ---
 
-### [FunkSVD](https://hans0803.github.io/myhtml.io/MovieLens_100k_Recommender_System.html#FunkSVD)
+### [FunkSVD](/html/MovieLens_100k_Recommender_System.html#FunkSVD)
 
 最後則是 FunkSVD，它是一種基於矩陣分解的推薦算法，利用奇異值分解（Singular Value Decomposition，SVD）來分解用戶與物品的評分矩陣，試圖將用戶和物品映射到一個共同的潛在特徵空間，並基於這些潛在由線性組合生成的特徵進行推薦。
 

@@ -16,9 +16,7 @@ tags : [
 
 ## Introduction
 
-這篇文章是修改我碩一時所製作的 R 函數，當時我們的目標是想要以Ｒ語言實作基於 F-value 的 Forward 及 Backward Stepwise Model Selection，由於近期在使用上套用至部分資料會跑出錯誤訊息，因此在這裏做簡單的版本翻修，並新增進了設置停止區間的參數及支援顯示當前進度的訊息，接下來我會簡單講解這個函數的參數及使用方法，更詳細的資訊可以參考下面的 Github 連結。
-
-{{< github repo="hans0803/APLM" >}}
+這篇文章是修改我碩一時所製作的 R 函數，當時我們的目標是想要以Ｒ語言實作基於 F-value 的 Forward 及 Backward Stepwise Model Selection，由於近期在使用上套用至部分資料會跑出錯誤訊息，因此在這裏做簡單的版本翻修，並新增進了設置停止區間的參數及支援顯示當前進度的訊息，接下來我會簡單講解這個函數的參數及使用方法，完整的套件原始碼可從本站下載（見下方安裝指令）。
 
 ---
 
@@ -44,11 +42,10 @@ tags : [
 
 面對僅有300個樣本，卻有6000個變數之類的高維度數據時，Ｒ內建的 aic 選模無法處理，但 fselect 支援對變數大於資料樣本時模型時的變數初步篩選，讓面對高維度數據時可以快速的縮小變數數目利於後續的特徵工程與建模。
 
-完整的 package 在 R 中透過以下指令下載：
+完整的 package 在 R 中透過以下指令安裝（原 GitHub 倉庫已轉為私人，套件改由本站提供）：
 
 ```r
-if(!require(devtools)) install.packages("devtools")
-devtools::install_github("hans0803/APLM")
+install.packages("https://hans0803.github.io/pkg/APLM_0.1.0.tar.gz", repos = NULL, type = "source")
 ```
 
 ---
