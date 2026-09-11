@@ -4,17 +4,13 @@ title : "藍莓產量預測報告"
 date : "2023-06-05"
 summary : "利用從 Kaggle 競賽中提供的野生藍莓產量預測數據，開發多個基於不同機器學習方法，用於估算野生藍莓產量的預測模型"
 categories : [
-    "R",
-    "Analysis",
-    "Feature Engineering",
-    "Machine Learning",
-    
+    "data-science"
 ]
 tags : [
-    "XGBoost",
-    "LightGBM",
-    "Random Forest",
-    "Linear Regression",
+    "r",
+    "machine-learning",
+    "modeling",
+    "data-processing"
 ]
 # series = ["Theme Demo"]
 ---

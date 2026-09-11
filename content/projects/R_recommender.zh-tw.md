@@ -4,13 +4,12 @@ title : "MovieLens 100k 推薦系統"
 date : "2022-12-21"
 summary : "運用電影評分資料資料嘗試構建基於不同方法的推薦系統"
 categories : [
-    "R",
-    "Recommender System"
+    "data-science"
 ]
 tags : [
-    "User Base",
-    "Item Base",
-    "FunkSVD"
+    "r",
+    "machine-learning",
+    "modeling"
 ]
 # series = ["Theme Demo"]
 ---

@@ -4,15 +4,13 @@ title : "BGG 桌遊地圖"
 date : "2023-06-30"
 summary : "透過抓取 BoardGameGeek 桌遊網站的遊戲資料後，將不同桌遊彼此之間距離進行可解釋的資料視覺化"
 categories : [
-    "R",
-    "Analysis",
-    "Visualization",
-    "Text Mining"    
+    "data-science"
 ]
 tags : [
-    "Jaccard",
-    "PCA",
-    "Shiny",
+    "r",
+    "visualization",
+    "text-mining",
+    "data-processing"
 ]
 ---
 

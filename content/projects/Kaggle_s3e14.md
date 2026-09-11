@@ -4,15 +4,13 @@ title = "PREDICTION OF BLUEBERRY YIELD"
 date = "2023-06-05"
 description = ""
 categories = [
-    "R",
-    "Machine Learing",
-    
+    "data-science"
 ]
 tags = [
-    "XGBoost",
-    "LightGBM",
-    "Random Forest",
-    "Linear Regression",
+    "r",
+    "machine-learning",
+    "modeling",
+    "data-processing"
 ]
 # series = ["Theme Demo"]
 +++

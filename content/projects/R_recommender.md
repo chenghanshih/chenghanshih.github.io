@@ -4,14 +4,12 @@ title = "MOVIELENS 100K RECOMMENDER SYSTEM"
 date = "2022-12-21"
 description = ""
 categories = [
-    "R",
-    "Recommender System",
-    
+    "data-science"
 ]
 tags = [
-    "User Base",
-    "Item Base",
-    "FunkSVD",
+    "r",
+    "machine-learning",
+    "modeling"
 ]
 # series = ["Theme Demo"]
 +++
