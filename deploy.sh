@@ -32,7 +32,7 @@ cd public
 if [ ! -d ".git" ]; then
     echo "📦 初始化 Git 倉庫..."
     git init
-    git remote add origin https://github.com/hans0803/hans0803.github.io.git
+    git remote add origin https://github.com/chenghanshih/chenghanshih.github.io.git
 fi
 
 # 添加所有文件
@@ -53,7 +53,7 @@ git push -u origin main --force
 # 檢查推送是否成功
 if [ $? -eq 0 ]; then
     echo "✅ 部署完成！"
-    echo "🔗 您的網站將在幾分鐘內更新：https://hans0803.github.io"
+    echo "🔗 您的網站將在幾分鐘內更新：https://chenghanshih.github.io"
 else
     echo "❌ 推送失敗，請檢查網路連線和 GitHub 權限"
     exit 1

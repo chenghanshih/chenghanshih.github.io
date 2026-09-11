@@ -27,7 +27,7 @@ author : "施承翰"
 
 **第32屆南區統計研討會 碩士論文短講 演講者 2023 / 06**
 
-* 演講題目為 BGG 桌遊圖，目標是將桌上遊戲的相關數據抓取後，基於文字探勘與模型建構後呈現遊戲之間的關係，並且將成果架設至[網頁](https://hans0803.shinyapps.io/BGG_BoardMap/)上提供客製化的模型輸出，我也將其簡單的[說明報告](https://hans0803.github.io/projects/master_bgg/)收錄在本網站中。
+* 演講題目為 BGG 桌遊圖，目標是將桌上遊戲的相關數據抓取後，基於文字探勘與模型建構後呈現遊戲之間的關係，並且將成果架設至[網頁](https://hans0803.shinyapps.io/BGG_BoardMap/)上提供客製化的模型輸出，我也將其簡單的[說明報告](https://chenghanshih.github.io/projects/master_bgg/)收錄在本網站中。
 
 **第32屆南區統計研討會 攝影企劃團隊 負責人 2023 / 06**
 

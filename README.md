@@ -1,7 +1,7 @@
-# hans0803.github.io（已封存 / Archived）
+# chenghanshih.github.io（已封存 / Archived）
 
 這是我 2022 至 2024 年求學期間的個人網站與技術筆記，內容以 R、SQL、統計模擬為主。
-自 2026 年 9 月起不再更新，僅保留線上版本供查閱：<https://hans0803.github.io>
+自 2026 年 9 月起不再更新，僅保留線上版本供查閱：<https://chenghanshih.github.io>
 
 This is my personal site and study notes from 2022 to 2024 (mostly R, SQL and statistical simulation).
 Frozen since September 2026; the live site stays online for reference.
@@ -14,8 +14,8 @@ Frozen since September 2026; the live site stays online for reference.
 ## 建置與部署 / Build & deploy
 
 ```bash
-git clone --recurse-submodules -b master https://github.com/hans0803/hans0803.github.io.git
-cd hans0803.github.io
+git clone --recurse-submodules -b master https://github.com/chenghanshih/chenghanshih.github.io.git
+cd chenghanshih.github.io
 hugo server        # 本機預覽
 ./deploy.sh        # 建置並強制推送 public/ 到 main
 ```

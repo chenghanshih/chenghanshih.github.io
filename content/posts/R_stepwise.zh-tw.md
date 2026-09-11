@@ -45,7 +45,7 @@ tags : [
 完整的 package 在 R 中透過以下指令安裝（原 GitHub 倉庫已轉為私人，套件改由本站提供）：
 
 ```r
-install.packages("https://hans0803.github.io/pkg/APLM_0.1.0.tar.gz", repos = NULL, type = "source")
+install.packages("https://chenghanshih.github.io/pkg/APLM_0.1.0.tar.gz", repos = NULL, type = "source")
 ```
 
 ---
